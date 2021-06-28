@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--CSS link-->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Code Quiz</title>
+    
+</head>
+<body>
+    <header class="row header">
+        <!--div for highscores and timer-->
+       <div class="col">
+           <div>
+               <span id="highscore">View Highscore</span>
+               <span id="timer">Time: 76s</span>
+           </div>
+       </div>
+    </header>
+
+
+    <div class="container-fluid">
+        <!--Quiz welcome, instructions and start button-->
+        <div class="container jumbotron">
+           <div class="row">
+               <div class="col-12 col-md-9">
+                   <h1 class="display-3">
+                       Coding Quiz Challenge
+                    </h1>
+                    <hr class="my-4">
+                    <br>
+                    <p class="quiz-intructions">
+                        Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                        answers will penalize your score/time by ten seconds!
+                    </p>
+                    <br>
+                    <button type="button" class="btn btn-primary justify-content-end start-quiz-btn">Start Quiz</button>
+               </div>
+           </div>
+        </div>
+
+        <!--Quiz Section and MCQ answer placeholders-->
+        <div class="row justify-content-center mcq-section">
+            <div class="col-md-8">
+                <h3 class="mb-5 question"></h3>
+                <button type="button" class="btn btn-primary btn-mcq answer-1"></button>
+                <button type="button" class="btn btn-primary btn-mcq answer-2"></button>
+                <button type="button" class="btn btn-primary btn-mcq answer-3"></button>
+                <button type="button" class="btn btn-primary btn-mcq answer-4"></button>
+
+                <span id="correct-or-incorrect" class="mt-5"></span>
+            </div>
+        </div>   
+    </div>
+
+    <!--Input initials section - The user is taken here after the quiz-->
+    <div class="initials-section container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-4 ">
+                <h2>
+                    All Done!
+                </h2>
+                <p> 
+                    Your final score is: <span id="score" class="pl-1"></span>
+                </p>
+                <p>Please enter initials: <span class="ml-1"><input type="text" placeholder="Initials" id="initials" /></span>
+                <button type="submit" class="btn btn-primary submit-btn d-inline-block mx-1 my-1">Submit</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Highscore Section - shows highscore history and initials, also gives the ability to clear highscores -->
+    <div class="container highscore-section">
+        <div class="row justify-content-center">
+            <div class="highscores-div col-12 col-md-8">
+                <h3>
+                    Highscores
+                </h3>
+                <ol class="score-list">
+                    <!--list elements will append here from JS-->
+                </ol>
+                <button id="go-back" class="btn btn-primary d-inline-block mx-1 mt-1">Go Back</button>
+                <button id="clear-highscores" class="btn btn-primary d-inline-block mx-1 mt-1">Clear Highscores</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="./Assets/js/script.js"></script>
+
+</body>
+</html>

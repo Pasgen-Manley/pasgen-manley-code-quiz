@@ -1,0 +1,65 @@
+body {
+    background-color: #ecf0e3;
+}
+
+
+/* HEADER */
+
+Header {
+    background-color: #0275d8;
+    padding-bottom: 20px;
+}
+
+#timer {
+    float: right;
+    margin-right: 2%;
+    padding-top: 0.75%;
+    font-weight: bold;
+}
+
+#highscore {
+    float: left;
+    margin-left: 1%;
+    padding-top: 0.75%;
+    font-weight: bold;
+}
+
+#highscore:hover {
+    opacity: 0.3;
+}
+
+/* QUIZ INSTRUCTIONS */
+
+.jumbotron h1 {
+    font-weight: bold;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: block;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    color: black;     
+}
+
+.mcq-section {
+    display: none;
+    margin-top: 90px;
+    margin-left: 30%;
+}
+
+.initials-section {
+    display: none;
+}
+
+.highscore-section {
+    display: none;
+}
+
+.score-list ol  {
+    display: block;
+}
