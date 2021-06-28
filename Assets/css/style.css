@@ -46,16 +46,21 @@ Header {
     color: black;     
 }
 
+/* QUIZ SECTION */
 .mcq-section {
     display: none;
     margin-top: 90px;
     margin-left: 30%;
 }
 
+/* INITIIALS IMPUT SECTION */
+
 .initials-section {
     display: none;
 }
 
+
+/* HIGHSCORE SECTION */
 .highscore-section {
     display: none;
 }
